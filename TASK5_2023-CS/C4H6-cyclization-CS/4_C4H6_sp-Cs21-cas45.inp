@@ -1,0 +1,18 @@
+ $CONTRL 
+ runtyp=hessian
+ scftyp=mcscf
+ $END
+ $basis gbasis=n31 ngauss=6 ndfunc=1 $end
+! $Guess guess=moread norb=17 norder=0 iorder(17)=19,17,18  prtmo=.t. $end
+! $Mcscf fulnr=.t. $end
+ $dEt group=cs  ncore=13 nact=4 neLs=4 SZ=0 nstate=1 $end
+ $DATA
+ C4H6
+Cs
+
+CARBON      6.0     -0.823047222        -0.120269484         0.735582760
+CARBON      6.0      0.517107777         0.075564270         1.250000000
+HYDROGEN    1.0     -1.794762132        -0.262263940         1.205477480
+HYDROGEN    1.0      0.492785102         0.731633825         2.114018692
+HYDROGEN    1.0      1.449362034        -0.447844877         1.064283697
+ $END

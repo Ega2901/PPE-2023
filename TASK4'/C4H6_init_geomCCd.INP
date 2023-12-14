@@ -1,0 +1,19 @@
+ $CONTRL runtyp=SADPOINT UNITS=ANGS ISPHER=1 $END
+ $basis gbasis=CCD $end
+ $statpt nstep=100 hssend=.t.  ifolow=1 hess=calc
+ ihrep=3 $end
+ $SCF DIRSCF=.T. $END
+ $DATA
+ C4H6
+C1
+CARBON      6.0     -0.724611250         0.183368299        -0.153467841
+CARBON      6.0      0.724611242        -0.183368336        -0.153467849
+CARBON      6.0     -1.286833345         1.101573596         0.598751270
+CARBON      6.0      1.286833340        -1.101573595         0.598751305
+HYDROGEN    1.0     -1.334842710        -0.372931693        -0.856558964
+HYDROGEN    1.0      1.334842720         0.372931692        -0.856558929
+HYDROGEN    1.0     -0.727815807         1.698517047         1.305784109
+HYDROGEN    1.0      0.727815796        -1.698517053         1.305784130
+HYDROGEN    1.0     -2.346291690         1.310049770         0.541904267
+HYDROGEN    1.0      2.346291678        -1.310049798         0.541904274
+ $END

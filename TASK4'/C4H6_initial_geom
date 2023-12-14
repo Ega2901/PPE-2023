@@ -1,0 +1,14 @@
+ $CONTRL runtyp=energy UNITS=ANGS $END
+ $basis gbasis=sto ngauss=3 $end
+! $statpt nstep=100 hssend=.t.  ifolow=1 hess=calc
+! ihrep=3 $end
+ $DATA
+Butadiene,initial geometry
+ cnh 2
+
+ C           6.0   0.75           0.
+ C           6.0   1.5            1.1
+ H           1.0   1.2           -1.
+ H           1.0   1.             2.1
+ H           1.0   2.5            1.1
+ $end

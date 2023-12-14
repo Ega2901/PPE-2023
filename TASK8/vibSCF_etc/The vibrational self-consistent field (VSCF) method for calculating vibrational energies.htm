@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0061)http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html -->
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds --><HTML><HEAD><TITLE>The vibrational self-consistent field (VSCF) method for calculating vibrational energies</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META 
+content="The vibrational self-consistent field (VSCF) method for calculating vibrational energies" 
+name=description>
+<META content=web name=keywords>
+<META content=document name=resource-type>
+<META content=global name=distribution><LINK 
+href="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/web.css" 
+rel=STYLESHEET>
+<META content="MSHTML 5.00.3828.2700" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff lang=EN><A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html" 
+name=tex2html558><IMG align=bottom alt=next height=24 src="" width=37></A> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/web.html" 
+name=tex2html556><IMG align=bottom alt=up height=24 src="" width=26></A> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node49.html" 
+name=tex2html550><IMG align=bottom alt=previous height=24 src="" width=63></A> 
+<BR><B>Next:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html" 
+name=tex2html559>References</A> <B>Up:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/web.html" 
+name=tex2html557>No Title</A> <B>Previous:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node49.html" 
+name=tex2html551>References</A> <BR>
+<P>
+<H1><A name=SECTION027000000000000000000>The vibrational self-consistent field 
+(VSCF) method for calculating vibrational energies</A></H1>
+<P>Reproduced from:<BR>M.&nbsp;M.&nbsp;Law, I.&nbsp;A.&nbsp;Atkinson and 
+J.&nbsp;M.&nbsp;Hutson (eds.)<BR>Rovibrational Bound States in Polyatomic 
+Molecules<BR>ISBN 0-9522736-6-7 © 1999, CCP6, Daresbury 
+<P>The Fritz Haber Center for Molecular Dynamics and Department of Physical 
+Chemistry, The Hebrew University, Jerusalem 91904, Israel<BR>and<BR>Department 
+of Chemistry, University of California, Irvine, CA 92697, USA<BR>e-mail: 
+Benny@fh.huji.ac.il 
+<H1 align=center>The vibrational self-consistent field (VSCF) method for 
+calculating vibrational energies</H1>
+<P align=center><STRONG>Nicholas J. Wright, Galina M. Chaban, Joon O. Jung and 
+R. Benny Gerber</STRONG></P>
+<P>
+<P>
+<P>
+<P>To calculate the vibrational spectrum of polyatomic molecules it is best to 
+solve the nuclear motion Schrödinger equation exactly. This, however, is 
+currently possible only for relatively small systems (4-6 atoms). For larger 
+systems, to make the problem computationally tractable, approximations must be 
+introduced. Such an approximation must reduce the numerical effort involved as 
+well as retaining the important dynamical features of the problem. One of the 
+most commonly used methods is based upon the vibrational self-consistent field 
+(VSCF) approximation [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#bowacr19">1</A>, 
+<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#ratjpc90">2</A>]. 
+
+<P>The vibrational Schrödinger equation for a non-rotating molecule is 
+<P><IMG align=bottom alt=equation2874 height=76 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img334.gif" 
+width=527> 
+<P>where the <IMG align=middle alt=tex2html_wrap_inline4984 height=23 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img335.gif" 
+width=15> 's are mass-weighted normal coordinates, <IMG align=middle 
+alt=tex2html_wrap_inline4986 height=26 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img336.gif" 
+width=105> is the full potential function of the system and <I>N</I> is the 
+number of vibrational modes. The VSCF approximation is based upon the 
+approximation that the wave function can be written as a Hartree product of 
+one-dimensional functions, 
+<P><IMG align=bottom alt=equation2882 height=50 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img337.gif" 
+width=500> 
+<P>which leads to the single-mode SCF equations 
+<P><A name=1steq>&nbsp;</A> <IMG align=bottom alt=equation2886 height=48 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img338.gif" 
+width=500> 
+<P>where the effective potential for the mode <IMG align=middle 
+alt=tex2html_wrap_inline4984 height=23 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img335.gif" 
+width=15> is given by 
+<P><A name=2ndeq>&nbsp;</A> <IMG align=bottom alt=equation2897 height=59 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img339.gif" 
+width=500> 
+<P>Eqs. (<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html#1steq"><IMG 
+align=bottom alt=gif src=""></A>-<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html#2ndeq"><IMG 
+align=bottom alt=gif src=""></A>) are solved self-consistently. The VSCF 
+approximation for the total energy is then given by 
+<P><IMG align=bottom alt=equation2908 height=59 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img340.gif" 
+width=531> 
+<P>
+<P>The computational difficulty in solving VSCF equations is in evaluation of 
+Eq. (<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html#2ndeq"><IMG 
+align=bottom alt=gif src=""></A>), the effective VSCF potential, which requires 
+the evaluation of multidimensional integrals. Several approaches have been used 
+to avoid this bottleneck, based upon expanding the potential function in powers 
+of the normal modes [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#joojcp105">3</A>] 
+or only including interactions between pairs of normal modes in the potential 
+expansion [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#joojcp105">3</A>]. 
+Monte Carlo integration of the multidimensional integrals was also proposed [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#joojcp105">3</A>], 
+but has not yet been applied to realistic molecular systems. 
+<P>The VSCF method has been used for a variety of different polyatomics, all of 
+which exploit its computational efficiency when applied to large systems. 
+Examples include (Ar) <IMG align=middle alt=tex2html_wrap_inline4992 height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img341.gif" 
+width=11> [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#junjcp105">4</A>], 
+small water clusters (H <IMG align=middle alt=tex2html_wrap_inline3248 height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img9.gif" 
+width=5> O) <IMG align=middle alt=tex2html_wrap_inline4952 height=6 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img333.gif" 
+width=7> [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#joojcp105">3</A>] 
+(recently up to <I>n</I> =8), peptide-water complexes [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#grejpc101">5</A>] 
+and glucose\ [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#grejpcxxx">6</A>]. 
+It has also been used for perhaps the largest system ever to have its 
+vibrational spectrum calculated, the protein BPTI [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#roisci268">7</A>, 
+<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#roijpc101">8</A>]. 
+This calculation included almost 200 hydration water molecules, giving a total 
+of over 3500 interacting modes and showed that even for such a large system the 
+spectrum remained assignable. 
+<P>For systems where an analytical potential form is available, VSCF 
+calculations are feasible even for systems having hundreds or thousands of 
+coupled anharmonic modes. If such an analytical form is not available, a new 
+potential function must be constructed. This approach, which requires a new 
+potential to be constructed for each type of system studied, can become tedious 
+and places as much emphasis on the construction of the potential as on the 
+solution of the dynamical problem. These considerations led to the development 
+of a new method, <EM>ab initio</EM> VSCF [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#chajcpxxx">9</A>]. 
+If Eqs.\ (<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html#1steq"><IMG 
+align=bottom alt=gif src=""></A>-<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node50.html#2ndeq"><IMG 
+align=bottom alt=gif src=""></A>) are solved using grid-based methods\ [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#joojcp105">3</A>], 
+then the value of the potential energy function is only required at these 
+discrete points. Therefore by interfacing an electronic structure code to the 
+VSCF one, to compute the potential, the need for an analytical form for the 
+potential is eliminated. This method opens the way for first-principles 
+calculations of the vibrational spectroscopy of polyatomic molecules and, by 
+comparing the results with experiment, provides a method for the calibration of 
+the various electronic structure methods available today. <EM>Ab initio</EM> 
+VSCF has so far been applied to several systems, (H <IMG align=middle 
+alt=tex2html_wrap_inline3248 height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img9.gif" 
+width=5> O) <IMG align=middle alt=tex2html_wrap_inline4952 height=6 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img333.gif" 
+width=7> , Cl <IMG align=bottom alt=tex2html_wrap_inline5004 height=1 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img342.gif" 
+width=7> (H <IMG align=middle alt=tex2html_wrap_inline3248 height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img9.gif" 
+width=5> O) <IMG align=middle alt=tex2html_wrap_inline4952 height=6 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img333.gif" 
+width=7> (<I>n</I>=2-3), H <IMG align=middle alt=tex2html_wrap_inline3284 
+height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img17.gif" 
+width=6> O <IMG align=bottom alt=tex2html_wrap_inline5014 height=9 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img343.gif" 
+width=8> , H <IMG align=middle alt=tex2html_wrap_inline5016 height=10 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img344.gif" 
+width=5> O <IMG align=middle alt=tex2html_wrap_inline4948 height=28 
+src="The vibrational self-consistent field (VSCF) method for calculating vibrational energies_files/img332.gif" 
+width=8> and glycine\ [<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#chajcpxxx">9</A>, 
+<A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html#chaunp">10</A>], 
+with promising results. 
+<P>The VSCF method has proved itself to be a powerful tool for the 
+interpretation and prediction of vibrational spectroscopy. The increasing 
+amounts of computer power becoming available should make it feasible to perform 
+VSCF calculations on even larger systems with even greater accuracy. 
+<P>NJW thanks the Royal Society for a post-doctoral fellowship. The work in 
+Israel was supported by the Israeli Science Foundation. The work at UC Irvine 
+was supported by the Petroleum Research Fund administered by the American 
+Chemical Society. 
+<P>
+<HR>
+<A href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html" 
+name=tex2html558><IMG align=bottom alt=next height=24 src="" width=37></A> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/web.html" 
+name=tex2html556><IMG align=bottom alt=up height=24 src="" width=26></A> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node49.html" 
+name=tex2html550><IMG align=bottom alt=previous height=24 src="" width=63></A> 
+<BR><B>Next:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node51.html" 
+name=tex2html559>References</A> <B>Up:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/web.html" 
+name=tex2html557>No Title</A> <B>Previous:</B> <A 
+href="http://www.abdn.ac.uk/~che194/research/rovib99/bk/node49.html" 
+name=tex2html551>References</A> 
+<P>
+<ADDRESS><I>m.m.law <BR>Tue Aug 17 18:54:52 BST 1999</I> 
+</ADDRESS></BODY></HTML>

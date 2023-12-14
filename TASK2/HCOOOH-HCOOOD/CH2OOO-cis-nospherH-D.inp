@@ -1,0 +1,15 @@
+ $CONTRL  RUNTYP=hessian mplevl=2
+! ispher=+1
+! numgrd=.t.
+! exetyp=check
+ $END
+ $system TIMLIM=9000 
+ mwords=80 memddi=20 $end
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=1 $END
+ $statpt hssend=.t. $end
+! $BASIS  GBASIS=ccd $END
+ $force rdhess=.t. method=seminum nvib=2 $end
+! Моделирование изотопрозамещения H->D
+ $mass amass(5)=2.014 $end
+!
+ $scf dirscf=.t. $end

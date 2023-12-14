@@ -1,0 +1,13 @@
+ $CONTRL runtyp=optimize UNITS=ANGS $END
+ $basis gbasis=sto ngauss=3 $end
+ $statpt nstep=100 hssend=.t. $end
+ $DATA
+ HCOOH test geometry
+ cs
+ 
+ C           6.0   -1.003576 -0.1338151
+ O           8.0  -1.003576 1.226185  
+ O           8.0  -2.060127 -0.7438151
+ H           1.0  -1.908674 1.546181
+ H           1.0  -0.06826878 -0.6738151
+ $end

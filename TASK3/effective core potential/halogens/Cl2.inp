@@ -1,0 +1,66 @@
+!Надо вставить параметры псевдопотенциала
+ $CONTRL
+ SCFTYP=rhf 
+ RUNTYP=optimize
+ mult=1 
+ itol=30
+ icut=11
+ PP=read
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Clorine dimer, basis CRENBL ECP
+ dnh 2
+                                                                                                                                                                  
+CHLORINE     17.0     0 0  1.5                                      
+ S   1
+  1        21.51000000          1.000000000    
+ S   1
+  1        2.145000000          1.000000000    
+ S   1
+  1       0.5119000000          1.000000000    
+ S   1
+  1       0.1799000000          1.000000000    
+ P   1
+  1        14.55000000          1.000000000    
+ P   1
+  1        4.179000000          1.000000000    
+ P   1
+  1       0.6291000000          1.000000000    
+ P   1
+  1       0.1830000000          1.000000000    
+
+ $end
+ $ecp
+
+
+insert cards
+ $end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ $END

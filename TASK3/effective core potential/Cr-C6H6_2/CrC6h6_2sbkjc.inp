@@ -1,0 +1,22 @@
+ $CONTRL  RUNTYP=optimize
+ ispher=+1
+! numgrd=.t.
+! exetyp=check
+ pp=sbkjc
+ $END
+ $system TIMLIM=9000 
+ mwords=80 memddi=20 $end
+ $BASIS  GBASIS=SBK $END
+! $statpt hssend=.t. $end
+! $BASIS  GBASIS=cct $END
+ $scf dirscf=.t. $end
+
+
+ $DATA
+ Cr(C6H6)2
+Dnh 6
+
+ Cr          24  
+ C           6.0   0   1.4   1.2
+ H           1.0   0    2.5  1.2
+ $END

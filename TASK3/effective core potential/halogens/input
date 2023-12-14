@@ -1,0 +1,19 @@
+ $CONTRL
+ SCFTYP=rhf 
+ RUNTYP=optimize
+ mult=1 
+ itol=30
+ icut=11
+ PP=sbk
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+ $BASIS GBASIS=sbk $END
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $statpt hssend=.t. $end
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Lithium dimer, basis 
+ dnh 2
+                                            
+Bromine   35  0 0  1.5
+ $END

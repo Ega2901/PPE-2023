@@ -1,0 +1,17 @@
+ $CONTRL
+ SCFTYP=UHF 
+ RUNTYP=ENERGY
+ mult=2 
+ itol=30
+ icut=11
+ PP=SBK
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+ $BASIS GBASIS=sbk $END
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Lithium basis SBK ( -31 G)
+ C1                                                                                                                                                                  
+ Lithium     3.0    1.     0.0      0.                                        
+ $END

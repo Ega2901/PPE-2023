@@ -1,0 +1,44 @@
+ $CONTRL
+ SCFTYP=RHF 
+ RUNTYP=OPTIMIZE
+ mult=1
+ itol=30
+ icut=11
+ pp=read
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+! $BASIS GBASIS=sbk $END
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $statpt hssend=.t. $end
+ $force nvib=2 $end
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Lithium basis SBKJC Polarized (p,2d) - LFK
+ Cnv 2
+                                                                                                                                                                  
+ Lithium     3.0    1.     0.0      0.                                        
+P   1
+  1      0.006572900            1.0000000        
+L   3
+  1      0.617700000           -0.16287000             0.10588100       
+  2      0.143400000            0.12643000             0.44383400       
+  3      0.050480000            0.76179000             0.52140000       
+L   1
+  1      0.019230000            0.21800000             0.34290000       
+D   2
+  1      0.134626600            1.00000000       
+  2      0.054686000            0.15986100       
+D   2
+  1      0.018035500            1.00000000       
+  2      0.007688200            0.96383900       
+
+ $END
+ $ECP 
+ LI-ECP GEN     2     1
+ 1      ----- p-ul potential     -----
+    -0.7306300        1      1.3430600        
+ 2      ----- s-ul potential     -----
+     1.8013100        0      0.6128400        
+     3.5497100        2      1.6488100        
+ LI-ECP GEN
+ $END

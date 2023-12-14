@@ -1,0 +1,20 @@
+ $CONTRL
+ SCFTYP=rhf 
+ RUNTYP=optimize
+ mult=1 
+ itol=30
+ icut=11
+ pp=SBK
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+ $BASIS GBASIS=sbk $END
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Lithium dimer, basis SBK ( -31G)
+ Cnv 2
+                                                                                                                                                                  
+ Lithium     3.0    1.     0.0      0.                                        
+ $END
+
+

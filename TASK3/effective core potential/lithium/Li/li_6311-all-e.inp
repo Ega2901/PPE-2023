@@ -1,0 +1,17 @@
+ $CONTRL
+ SCFTYP=UHF 
+ RUNTYP=ENERGY
+ mult=2 
+ itol=30
+ icut=11
+ pp=NONE
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=900000 $END                                                 
+ $BASIS GBASIS=N311 NGAUSS=6 NPFUNC=3 NDFUNC=3 DIFFS=.T. DIFFSP=.T. $END
+ $GUESS  GUESS=HUCKEL $END                                                             
+ $SCF NCONV=5 $END
+ $DATA                                                                                 
+ Lithium atom, basis (12s6p3d)/[5s4p3d]
+ C1                                                                                                                                                                  
+ Lithium     3.0    1.     0.0      0.                                        
+ $END

@@ -1,0 +1,87 @@
+HTML {
+	BACKGROUND: white; COLOR: black
+}
+BODY {
+	MARGIN-LEFT: 0.25in; MARGIN-RIGHT: 0.25in
+}
+P {
+	TEXT-ALIGN: justify
+}
+SUP {
+	FONT-SIZE: 70%
+}
+SUB {
+	FONT-SIZE: 70%
+}
+.small {
+	FONT-SIZE: smaller
+}
+A {
+	TEXT-DECORATION: none
+}
+TABLE.data {
+	BORDER-BOTTOM: gray thin solid; BORDER-LEFT: gray thin solid; BORDER-RIGHT: gray thin solid; BORDER-TOP: gray thin solid; MARGIN-BOTTOM: 1ex
+}
+TABLE.data TH {
+	BACKGROUND: #ffcccc; BORDER-BOTTOM: gray thin solid; BORDER-LEFT: gray thin solid; BORDER-RIGHT: gray thin solid; BORDER-TOP: gray thin solid
+}
+TABLE.data TD {
+	BORDER-BOTTOM: gray thin solid; BORDER-LEFT: gray thin solid; BORDER-RIGHT: gray thin solid; BORDER-TOP: gray thin solid
+}
+.message {
+	BORDER-BOTTOM: black thin solid; BORDER-LEFT: black thin solid; BORDER-RIGHT: black thin solid; BORDER-TOP: black thin solid; MARGIN-BOTTOM: 1em; MARGIN-TOP: 1em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; border-radius: 1em; moz-border-radius: 1em; webkit-border-radius: 1em
+}
+.warning {
+	BORDER-BOTTOM: black thin solid; BORDER-LEFT: black thin solid; BORDER-RIGHT: black thin solid; BORDER-TOP: black thin solid; MARGIN-BOTTOM: 1em; MARGIN-TOP: 1em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; border-radius: 1em; moz-border-radius: 1em; webkit-border-radius: 1em
+}
+.message {
+	BACKGROUND-COLOR: lightblue
+}
+.warning {
+	BACKGROUND-COLOR: lightpink
+}
+DIV.message {
+	MARGIN-LEFT: 15%; MARGIN-RIGHT: 15%
+}
+DIV.warning {
+	MARGIN-LEFT: 15%; MARGIN-RIGHT: 15%
+}
+.mixture {
+	VERTICAL-ALIGN: middle
+}
+.mixture SPAN.punct {
+	FONT-SIZE: 150%
+}
+HR.subdivide {
+	MARGIN-LEFT: 0pt; MARGIN-RIGHT: auto; WIDTH: 80%
+}
+IMG.no-border {
+	BORDER-BOTTOM: 0pt; BORDER-LEFT: 0pt; BORDER-RIGHT: 0pt; BORDER-TOP: 0pt; VERTICAL-ALIGN: text-top
+}
+IMG.struct {
+	BORDER-BOTTOM: 0pt; BORDER-LEFT: 0pt; BORDER-RIGHT: 0pt; BORDER-TOP: 0pt; VERTICAL-ALIGN: text-top
+}
+P.section-head {
+	MARGIN-LEFT: 2em
+}
+DIV.indented {
+	MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em
+}
+P.indented {
+	MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em
+}
+TD.left {
+	TEXT-ALIGN: left
+}
+TD.right {
+	TEXT-ALIGN: right
+}
+TD.left-nowrap {
+	TEXT-ALIGN: left; whitespace: nowrap
+}
+TD.center-nowrap {
+	TEXT-ALIGN: center; whitespace: nowrap
+}
+TD.right-nowrap {
+	TEXT-ALIGN: right; whitespace: nowrap
+}

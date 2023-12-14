@@ -1,0 +1,22 @@
+ $CONTRL
+ SCFTYP=RHF 
+ mult=1 
+ cctyp=ccsd(tq)
+ $END                                                                                            
+ $SYSTEM TIMLIM=146  MEMORY=90000000 $END                                                 
+
+
+! $BASIS GBASIS=sto NGAUSS=3 $END                                                      
+
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=1
+ $END       
+
+ $scf dirscf=.t. $end
+
+ $DATA
+   C6H6
+dnh 6
+
+HYDROGEN   1.0    0.0     2.5    0.0
+carbon     6.0    0.0     1.4    0.0
+$END             

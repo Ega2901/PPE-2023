@@ -1,0 +1,27 @@
+ $contrl scftyp=rhf runtyp=optimize maxit=80 icharg=0
+ cctyp=ccsd(t)
+! внимание это флаг, обозначающий численный расчет градиента(энергии).Аналитический - недоступен в CC
+ numgrd=.t.
+! mplevl=2
+ itol=30
+ icut=20
+ Inttyp=hondo
+! это флаг,обеспечивающий использование чистых сферических функций, т.е 5d,7f и 9g
+ ispher=+1
+ $end
+ $ccinp maxcc=50 $end
+ $system TIMLIM=90000 
+ mwords=10 memddi=9 $end
+ $MP2 CUTOFF=1.0d-20  $END
+ $mp2grd tol1=1.0d-20 tol2=1.0d-20 $end
+ $scf DIIS=.T. SOSCF=.F. dirscf=.t. nconv=7 fdiff=.f. $end
+ $statpt nstep=1000  opttol=1.d-5 projct=.f. hssend=.t. $end
+ $force nvib=2 method=fullnum $end 
+ $basis gbasis=cct $end
+ $GUESS  GUESS=Huckel $END
+ $data
+
+ dnh 2
+ 
+ Ar          18.0  0.0   0. 1.9
+$END

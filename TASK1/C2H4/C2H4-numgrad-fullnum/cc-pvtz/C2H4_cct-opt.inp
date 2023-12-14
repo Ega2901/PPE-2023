@@ -1,0 +1,20 @@
+ $CONTRL  RUNTYP=optimize cctyp=ccsd(t) 
+ ispher=+1
+ numgrd=.t.
+! exetyp=check
+ $END
+ $system TIMLIM=9000 
+ mwords=80 memddi=20 $end
+! $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=1 $END
+ $BASIS  GBASIS=cct $END
+ $force method=fullnum $end
+ $scf dirscf=.t. $end
+
+ $DATA
+ C2H4
+ dnh 2
+
+ CARBON      6.0   0.0000000000   0.0000000000   0.7
+ HYDROGEN    1.0   0.0000000000   0.6            1.2
+ $END
+ 

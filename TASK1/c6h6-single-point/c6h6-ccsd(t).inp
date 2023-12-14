@@ -1,0 +1,18 @@
+ $CONTRL
+ SCFTYP=RHF 
+ mult=1 
+ cctyp=ccsd(t)
+ $END                                                                                            
+ $system TIMLIM=9000 mwords=10 memddi=21 $end
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=1
+ $END       
+
+ $scf dirscf=.t. $end
+
+ $DATA
+   C6H6
+dnh 6
+
+HYDROGEN   1.0    0.0     2.5    0.0
+carbon     6.0    0.0     1.4    0.0
+$END             

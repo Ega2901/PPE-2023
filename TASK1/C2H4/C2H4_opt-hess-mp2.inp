@@ -1,0 +1,20 @@
+ $CONTRL  RUNTYP=optimize mplevl=2
+! ispher=+1
+! numgrd=.t.
+ $END
+ $system TIMLIM=9000 
+ mwords=80 memddi=2 $end
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=1 $END
+! $basis gbasis=cct $end
+ $statpt nstep=1000  opttol=1.d-5 projct=.f. hssend=.t. $end
+ $force nvib=2  $end 
+ $scf dirscf=.t. $end
+
+ $DATA
+ C2H4
+ dnh 2
+
+ CARBON      6.0   0.0000000000   0.0000000000   0.6660175477
+ HYDROGEN    1.0   0.0000000000   0.9228154305   1.2279223329
+ $END
+ 
